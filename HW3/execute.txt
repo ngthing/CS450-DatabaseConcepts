@@ -1,0 +1,374 @@
+4> show departments
+
+Dept#    Deptname  
+alpha[4] alpha[20] 
+appa     apparel   
+kitc     kitchen   
+bedr     bedroom   
+toys     toysgame  
+pers     personel  
+acct     accouting 
+ship     shipping  
+
+5> show admin
+
+Dept#    Deptname  Manager# 
+alpha[4] alpha[20] Enn      
+pers     personel  E01      
+acct     accouting E05      
+ship     shipping  E08      
+
+6> show retail
+
+Dept#    Deptname  
+alpha[4] alpha[20] 
+appa     apparel   
+kitc     kitchen   
+bedr     bedroom   
+toys     toysgame  
+
+7> show employees
+
+Emp#  Ename           Eskill        WorkDept# 
+Enn   alpha[50]       alpha[20]     alpha[4]  
+E01   Mark Zuckerberg programmer    pers      
+E01   Mark Zuckerberg communication pers      
+E02   Tim Cook        programmer    toys      
+E02   Tim Cook        communication toys      
+E03   Scott Scherr    salesperson   appa      
+E04   Jeff Weiner     salesperson   bedr      
+E04   Jeff Weiner     programmer    bedr      
+E05   Dominic Barton  math          acct      
+E05   Dominic Barton  salesperson   acct      
+E06   Alex Gorsky     planning      ship      
+E07   John Legere     planning      kitc      
+E07   John Legere     math          kitc      
+E08   McDowell        programmer    toys      
+E09   Kifer           math          acct      
+E09   Kifer           writing       acct      
+E10   Carol           salesperson   bedr      
+E10   Carol           programmer    bedr      
+E11   Lewis           salesperson   appa      
+
+8> show items
+
+Item# Dept#    Iname                     Desc                                                                                                                   Price         Quantity    Shipcost      
+Inn   alpha[4] alpha[20]                 alpha[200]                                                                                                             x is R x >= 0 x is Z x>=0 x is R x >= 0 
+I00   appa     Women Essie Dress         Lilly Pulitzer Women Essie Dress                                                                                       98            10          3.99          
+I01   appa     Maxi Dress                As U Wish Women Woeven Hi Lo Maxi Dress                                                                                29.99         10          3.99          
+I02   appa     Scallop Sheath Dress      As U Wish Juniors Scallop Sheath Dress                                                                                 29.99         10          3.99          
+I03   appa     Women Colro               Calvin Klein Women Colro Block Scuba Sheath                                                                            30.5          10          3.99          
+I04   appa     Women Scuba Sheath Dress  Ivanka Trump Women Scuba Sheath Dress                                                                                  30.5          32          3.99          
+I05   kitc     Instant Pot               Instant pot 7in1                                                                                                       119.95        32          3.99          
+I06   kitc     CrockPot                  SCCPVL610S Programmable Cook and Carry Oval Slow Cooker                                                                129.99        32          3.99          
+I07   kitc     Travel Mug                Contigo Autoseal West Loop Stainless Steel Travel Mug with EasyClean Lid                                               15.09         32          3.99          
+I08   kitc     Camping Cookware          Camping Cookware Mess Kit Backpacking Gear                                                                             15.09         40          3.99          
+I09   kitc     Color Knife Set           Cuisinart 12 Piece Color Knife Set with Blade Guards (6 knives and 6 knife covers)                                     15.09         40          3.99          
+I10   kitc     Food Storage Container    Rubbermaid Easy Find Lid Food Storage Container 42Piece set                                                            15.09         40          3.99          
+I11   kitc     Bamboo Cutting Board Set  Totally Bamboo 3 Piece Bamboo Cutting Board SetCrackers & Cheese                                                       14.99         40          3.99          
+I12   kitc     Cutlery Tray              Rubbermaid NoSlip Cutlery Tray                                                                                         14.99         40          3.99          
+I13   kitc     Tool and Gadget Set       Farberware Classic 17Piece Tool and Gadget Set                                                                         14.99         40          3.99          
+I14   toys     Rubik Cube Game           brainteasing puzzler                                                                                                   9.99          40          3.99          
+I15   toys     Ravensburger Eiffel Tower 216 Piece 3D Building Set                                                                                              17.13         40          3.99          
+I16   toys     Perplexus                 Perplexus Original Maze Game by PlaSmart                                                                               18.95         40          3.99          
+I17   toys     Pokemon                   BW 3d Jigsaw                                                                                                           18.93         5           1.99          
+I18   toys     Melissa & Doug            Deluxe Fish Bowl Jumbo Knob Puzzle                                                                                     8.99          5           1.99          
+I19   toys     Melissa & Doug            Wooden Bear Family DressUp Puzzle                                                                                      12.42         5           1.99          
+I20   toys     Barbie                    Barbie and Toddler Student Flippin Fun Gymnastics Dolls                                                                29.97         5           1.99          
+I21   toys     Manhattan Toy             Baby Stella Peach Soft Nurturing First Doll (new for 2015!)                                                            22.46         5           1.99          
+I22   toys     Pony Baby                 My Little Pony Baby Flurry Heart Pony Figure                                                                           39.99         5           1.99          
+I23   toys     Barbie Chef               Barbie Spaghetti Chef Doll & Playset                                                                                   24.88         25          1.99          
+I24   toys     Family Pets               HapeFamily Pets Wooden Dollhouse Animals                                                                               12            25          1.99          
+I25   toys     Disney Princess           Disney Princess Little Kingdom Magiclip 7Doll Giftset                                                                  34.45         25          3.99          
+I26   bedr     Shower Curtain            mDesign PEVA 3G Shower Curtain Liner (PACK of 2)MILDEW Resistant                                                       9.99          25          3.99          
+I27   bedr     Toothpaste                Dustproof Hands Free Toothpaste Dispenser Automatic Toothpaste Squeezer and Toothbrush Holder Set for 5 Brushes (pink) 10.99         30          3.99          
+I28   bedr     Bath Tub                  Boon DIVE Bath Tub Appliques                                                                                           10.99         30          3.99          
+I29   bedr     Bed Sheet                 HC Collection Bed Sheet & Pillowcase Set HOTEL LUXURY 1800 Series Egyptian Quality Bedding Collection!                 10.99         30          3.99          
+I30   bedr     Filled Pillows            Super Plush GelFiber Filled Pillows                                                                                    10.99         2           3.99          
+
+9> show suppliers
+
+Sup#  Sname      Location  
+Snn   alpha[30]  alpha[30] 
+S00   Supplier00 VA        
+S01   Supplier01 MN        
+S02   Supplier02 DC        
+S03   Supplier03 LA        
+S04   Supplier04 ML        
+S05   Supplier05 WIS       
+S06   Supplier06 FL        
+S07   Supplier07 AZ        
+S08   Supplier08 CO        
+S09   Supplier09 NY        
+S10   Supplier10 CT        
+
+10> show cansupply
+
+Sup#  Item# Cost        
+Snn   Inn   x is R x>=0 
+S00   I00   60          
+S01   I01   15          
+S00   I01   15          
+S06   I00   60          
+S02   I00   60          
+S03   I02   15          
+S04   I03   20          
+S05   I04   20          
+S05   I05   100         
+S06   I05   100         
+S07   I06   30          
+S08   I07   10          
+S09   I08   10          
+S10   I09   10          
+S00   I10   10          
+S01   I11   12          
+S00   I12   13          
+S02   I13   10          
+S03   I14   8           
+S04   I15   15          
+S05   I16   14          
+S05   I17   14          
+S06   I18   5           
+S07   I19   10          
+S08   I20   20          
+S09   I21   30          
+S10   I22   35          
+S10   I23   20          
+S10   I24   7           
+S09   I25   30          
+S09   I26   5           
+S08   I27   7           
+S08   I28   7           
+S07   I29   7           
+S05   I30   7           
+
+11> show procurement
+
+Trans# Date     Quantity Sup#  Item# 
+Tnn    digit[6] x >=0    Snn   Inn   
+T00    160731   30       S00   I00   
+T01    160428   30       S01   I01   
+T02    160923   30       S03   I02   
+T03    140218   30       S04   I03   
+T04    150309   30       S05   I04   
+T05    140804   50       S06   I05   
+T06    150209   40       S07   I06   
+T07    160412   15       S08   I07   
+T08    150223   15       S09   I08   
+T09    140923   15       S10   I09   
+T10    140223   15       S00   I10   
+T11    150115   15       S01   I11   
+T12    150115   15       S00   I12   
+T13    150115   15       S02   I13   
+T14    150115   15       S03   I14   
+T15    150115   15       S04   I15   
+T16    150115   15       S05   I16   
+T17    160219   30       S05   I17   
+T18    141219   30       S06   I18   
+T19    150419   30       S07   I19   
+T20    160103   30       S08   I20   
+T21    131230   50       S09   I21   
+T22    150312   34       S10   I22   
+T23    160112   20       S10   I23   
+T24    160112   20       S10   I24   
+T25    160112   20       S09   I25   
+T26    160112   20       S09   I26   
+T27    160112   20       S08   I27   
+T28    160112   20       S08   I28   
+T29    160112   20       S07   I29   
+T30    140112   30       S05   I30   
+
+12> show customers
+
+Cus#  Cname             Address                     
+Cnn   alpha[50]         alpha[120]                  
+C00   Leonardo DiCaprio Pocantico Hills             
+C01   Tom Hanks         Seventh Ave                 
+C02   Brad Pitt         11 Madison Ave. at 24th St  
+C03   Tom Cruise        47 E. 12th St. nr. Broadway 
+C04   George Clooney    261 Moore St                
+C05   Russell Crowe     1190 New Hampshire Ave NW   
+C06   Meryl Streep      1201 24th St NW             
+C07   Jennifer Lawrence 1601 14th St NW             
+C08   Kate Winslet      633 D St NW                 
+C09   Julia Roberts     601 Pennsylvania Ave NW     
+C10   Sandra Bullock    1509 17th St NW             
+C11   Nicole Kidman     1924 Pennsylvania Ave NW    
+C12   Natalie Portman   3100 K St NW                
+C13   Angelina Jolie    5 E St NW                   
+C14   Anne Hathaway     1226 36th St NW             
+
+13> show creditcards
+
+Card# Type       Exp      Limit       
+Nnnn  alpha[10]  digit[4] x is Z x>=0 
+N001  visa       1803     300         
+N002  visa       1804     300         
+N003  visa       1804     300         
+N004  visa       1703     300         
+N005  visa       1512     300         
+N006  visa       1508     300         
+N007  visa       1603     300         
+N008  visa       1609     300         
+N009  visa       1902     300         
+N010  express    2002     300         
+N011  express    1901     300         
+N012  express    1803     300         
+N013  express    1604     200         
+N014  mastercard 1803     200         
+N015  mastercard 1502     200         
+N016  mastercard 1802     200         
+N017  mastercard 1802     200         
+N018  discover   1602     200         
+N019  discover   1802     200         
+N020  discover   1903     200         
+
+14> show cardowners
+
+Cus#  Card# 
+Cnn   Nnnn  
+C00   N001  
+C00   N019  
+C01   N020  
+C01   N002  
+C02   N003  
+C03   N004  
+C04   N018  
+C04   N005  
+C05   N006  
+C05   N007  
+C06   N016  
+C07   N008  
+C08   N009  
+C09   N010  
+C10   N011  
+C11   N012  
+C12   N013  
+C12   N017  
+C13   N014  
+C14   N015  
+
+15> show purchase
+
+Cus#  Card# Item# Date     Quantity 
+Cnn   Nnnn  Inn   digit[6] x >= 0   
+C00   N001  I07   160702   16       
+C01   N002  I08   160119   17       
+C02   N003  I09   160119   1        
+C03   N004  I00   160119   2        
+C04   N005  I01   151212   2        
+C05   N006  I02   141212   2        
+C07   N008  I03   150212   1        
+C08   N009  I04   160212   2        
+C10   N011  I05   150121   1        
+C11   N012  I06   150212   1        
+C04   N005  I11   160112   1        
+C12   N013  I12   160112   1        
+C13   N014  I13   160112   1        
+C14   N015  I14   160112   1        
+C03   N004  I01   160224   1        
+C03   N004  I11   160224   1        
+C06   N016  I19   160224   1        
+C12   N017  I20   160224   1        
+C04   N018  I21   160224   1        
+C00   N019  I22   160224   1        
+C01   N020  I23   140123   1        
+C13   N014  I24   160115   1        
+C14   N015  I25   160115   1        
+C06   N016  I26   160115   1        
+C12   N017  I27   160115   1        
+C13   N014  I05   160123   1        
+C14   N015  I06   150210   1        
+C08   N009  I30   140912   1        
+
+16> project ((project items over Item#) intersection (project (select (cansupply rename (Sup# as Sup#1, Item# as Item#1, Cost as Cost1) times cansupply ) where (Item#1 = Item# and Sup#1 <> Sup# and Cost1 = Cost)) over Item# ) join items) over Item#, Desc
+
+Item# Desc                                    
+Inn   alpha[200]                              
+I00   Lilly Pulitzer Women Essie Dress        
+I01   As U Wish Women Woeven Hi Lo Maxi Dress 
+I05   Instant pot 7in1                        
+
+17> project ((project ( select ((project purchase over Item#, Quantity) rename (Quantity as purchasedQ ) join ((project procurement over Item#, Quantity) rename (Quantity as procuredQ))) where purchasedQ > procuredQ) over Item#) join items) over Item#, Desc
+
+Item# Desc                                                                     
+Inn   alpha[200]                                                               
+I07   Contigo Autoseal West Loop Stainless Steel Travel Mug with EasyClean Lid 
+I08   Camping Cookware Mess Kit Backpacking Gear                               
+
+18> project ( ( (project ( select items where Quantity > 20) over Item#) difference (project(select purchase where Date > 160000) over Item#) ) join items ) over Item#, Desc
+
+Item# Desc                                                                                                   
+Inn   alpha[200]                                                                                             
+I06   SCCPVL610S Programmable Cook and Carry Oval Slow Cooker                                                
+I10   Rubbermaid Easy Find Lid Food Storage Container 42Piece set                                            
+I15   216 Piece 3D Building Set                                                                              
+I16   Perplexus Original Maze Game by PlaSmart                                                               
+I23   Barbie Spaghetti Chef Doll & Playset                                                                   
+I28   Boon DIVE Bath Tub Appliques                                                                           
+I29   HC Collection Bed Sheet & Pillowcase Set HOTEL LUXURY 1800 Series Egyptian Quality Bedding Collection! 
+
+19> project ( items join ((project (select items where Quantity < 20) over Item# ) difference (project (select procurement where Date > 150000) over Item# ))) over Item#, Desc
+
+Item# Desc                                                        
+Inn   alpha[200]                                                  
+I03   Calvin Klein Women Colro Block Scuba Sheath                 
+I18   Deluxe Fish Bowl Jumbo Knob Puzzle                          
+I21   Baby Stella Peach Soft Nurturing First Doll (new for 2015!) 
+I30   Super Plush GelFiber Filled Pillows                         
+
+20> project (((project ((project ( select creditcards where Exp < 1607) over Card#) join cardowners ) over Cus#) difference (project ((project ( select creditcards where Exp >= 1607) over Card#) join cardowners ) over Cus#)) join customers ) over Cus#, Cname
+
+Cus#  Cname          
+Cnn   alpha[50]      
+C05   Russell Crowe  
+C14   Anne Hathaway  
+C04   George Clooney 
+
+21> project (customers join(divide (project (purchase join (project (select cansupply where Sup#= "S01") over Item#)) over Cus#, Item#) by (project (select cansupply where Sup#= "S01") over Item#))) over Cus#, Cname
+
+Cus#  Cname          
+Cnn   alpha[50]      
+C03   Tom Cruise     
+C04   George Clooney 
+
+22> project (customers join ((project (select items where Price > 100) over Item#) join (project (select purchase where Date >= 150000 and Date < 160000) over Cus#, Item#))) over Cus#, Cname
+
+Cus#  Cname          
+Cnn   alpha[50]      
+C10   Sandra Bullock 
+C11   Nicole Kidman  
+C14   Anne Hathaway  
+
+23> select ( (project employees over Emp#, Ename, WorkDept#) join ((project admin over Dept#, Manager#) rename (Dept# as ManagedDept#, Manager# as Emp#))) where WorkDept# <> ManagedDept#
+
+Emp#  Ename     WorkDept# ManagedDept# 
+Enn   alpha[50] alpha[4]  alpha[4]     
+E08   McDowell  toys      ship         
+
+24> project (select ((employees rename (Emp# as Emp#1, Ename as Ename1, Eskill as Eskill1, WorkDept# as WorkDept#1)) times employees ) where (Emp#1 <> Emp# and WorkDept#1 = WorkDept# and Eskill1 = Eskill)) over Emp#1, Ename1, Emp#, Ename 
+
+Emp#1 Ename1         Emp#  Ename          
+Enn   alpha[50]      Enn   alpha[50]      
+E02   Tim Cook       E08   McDowell       
+E03   Scott Scherr   E11   Lewis          
+E04   Jeff Weiner    E10   Carol          
+E05   Dominic Barton E09   Kifer          
+E08   McDowell       E02   Tim Cook       
+E09   Kifer          E05   Dominic Barton 
+E10   Carol          E04   Jeff Weiner    
+E11   Lewis          E03   Scott Scherr   
+
+25> project (select ((employees rename (Emp# as Emp#1, Ename as Ename1, Eskill as Eskill1, WorkDept# as WorkDept#1)) times employees ) where (Emp#1 <> Emp# and WorkDept#1 = WorkDept# and Eskill1 = Eskill)) over Emp#1, Ename1, Emp#, Ename 
+
+Emp#1 Ename1         Emp#  Ename          
+Enn   alpha[50]      Enn   alpha[50]      
+E02   Tim Cook       E08   McDowell       
+E03   Scott Scherr   E11   Lewis          
+E04   Jeff Weiner    E10   Carol          
+E05   Dominic Barton E09   Kifer          
+E08   McDowell       E02   Tim Cook       
+E09   Kifer          E05   Dominic Barton 
+E10   Carol          E04   Jeff Weiner    
+E11   Lewis          E03   Scott Scherr   
+

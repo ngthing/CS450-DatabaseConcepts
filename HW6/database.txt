@@ -1,0 +1,1330 @@
+SQL> @dumpdb.sql
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DEPTCODE                                  NOT NULL CHAR(4)
+ DEPTNAME                                           VARCHAR2(20)
+
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310157                 P ENABLED  VALIDATED                             
+                                                                                
+DEPTCODE                                                                        
+         1                                                                      
+                                                                                
+
+
+DEPT DEPTNAME                                                                   
+---- --------------------                                                       
+appa apparel                                                                    
+bedr bedroom                                                                    
+toys toysgame                                                                   
+pers personel                                                                   
+acct accouting                                                                  
+ship shipping                                                                   
+kitc kitchen                                                                    
+
+7 rows selected.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL CHAR(3)
+ EMPNAME                                            CHAR(30)
+ ESKILL                                    NOT NULL CHAR(30)
+ WORKDEPT                                  NOT NULL CHAR(4)
+
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310158                 C ENABLED  VALIDATED                             
+"EMPNO" IS NOT NULL                                                             
+EMPNO                                                                           
+                                                                                
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310159                 C ENABLED  VALIDATED                             
+"ESKILL" IS NOT NULL                                                            
+ESKILL                                                                          
+                                                                                
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310160                 C ENABLED  VALIDATED                             
+"WORKDEPT" IS NOT NULL                                                          
+WORKDEPT                                                                        
+                                                                                
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310161                 P ENABLED  VALIDATED                             
+                                                                                
+EMPNO                                                                           
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310161                 P ENABLED  VALIDATED                             
+                                                                                
+ESKILL                                                                          
+         2                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310162                 R ENABLED  VALIDATED                             
+                                                                                
+WORKDEPT                                                                        
+         1                                                                      
+                                                                                
+
+6 rows selected.
+
+
+EMP EMPNAME                        ESKILL                         WORK          
+--- ------------------------------ ------------------------------ ----          
+E01 Mark Zuckerberg                programmer                     pers          
+E01 Mark Zuckerberg                communication                  pers          
+E02 Tim Cook                       programmer                     toys          
+E02 Tim Cook                       communication                  toys          
+E03 Scott Scherr                   salesperson                    appa          
+E04 Jeff Weiner                    salesperson                    bedr          
+E04 Jeff Weiner                    programmer                     bedr          
+E05 Dominic Barton                 salesperson                    acct          
+E06 Alex Gorsky                    planning                       ship          
+E07 John Legere                    planning                       kitc          
+E07 John Legere                    math                           kitc          
+
+EMP EMPNAME                        ESKILL                         WORK          
+--- ------------------------------ ------------------------------ ----          
+E08 McDowell                       programmer                     toys          
+E08 McDowell                       math                           toys          
+E09 Kifer                          math                           acct          
+E09 Kifer                          writing                        acct          
+E10 Carol                          salesperson                    bedr          
+E10 Carol                          programmer                     bedr          
+E11 Lewis                          salesperson                    appa          
+
+18 rows selected.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DEPTCODE                                  NOT NULL CHAR(4)
+ MANAGERNO                                          CHAR(3)
+
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310163                 P ENABLED  VALIDATED                             
+                                                                                
+DEPTCODE                                                                        
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310164                 R ENABLED  VALIDATED                             
+                                                                                
+DEPTCODE                                                                        
+         1                                                                      
+                                                                                
+
+
+DEPT MAN                                                                        
+---- ---                                                                        
+pers E01                                                                        
+acct E05                                                                        
+ship E08                                                                        
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DEPTCODE                                  NOT NULL CHAR(4)
+
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310165                 P ENABLED  VALIDATED                             
+                                                                                
+DEPTCODE                                                                        
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310166                 R ENABLED  VALIDATED                             
+                                                                                
+DEPTCODE                                                                        
+         1                                                                      
+                                                                                
+
+
+DEPT                                                                            
+----                                                                            
+appa                                                                            
+bedr                                                                            
+kitc                                                                            
+toys                                                                            
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ITEMNO                                    NOT NULL CHAR(3)
+ DEPTCODE                                  NOT NULL CHAR(4)
+ INAME                                              VARCHAR2(50)
+ DESCRIPTION                                        VARCHAR2(200)
+ PRICE                                              NUMBER(6,2)
+ QUANTITY                                           NUMBER(38)
+ SHIPCOST                                           NUMBER(6,2)
+
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310167                 C ENABLED  VALIDATED                             
+"DEPTCODE" IS NOT NULL                                                          
+DEPTCODE                                                                        
+                                                                                
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310168                 C ENABLED  VALIDATED                             
+price >= 0                                                                      
+PRICE                                                                           
+                                                                                
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310169                 C ENABLED  VALIDATED                             
+quantity >=0                                                                    
+QUANTITY                                                                        
+                                                                                
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310170                 C ENABLED  VALIDATED                             
+shipcost >= 0                                                                   
+SHIPCOST                                                                        
+                                                                                
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310171                 P ENABLED  VALIDATED                             
+                                                                                
+ITEMNO                                                                          
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310172                 R ENABLED  VALIDATED                             
+                                                                                
+DEPTCODE                                                                        
+         1                                                                      
+                                                                                
+
+6 rows selected.
+
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+I00 appa Women Essie Dress                                                      
+Lilly Pulitzer Women Essie Dress                                                
+        98         10       3.99                                                
+                                                                                
+I01 appa Maxi Dress                                                             
+As U Wish Women Woeven Hi Lo Maxi Dress                                         
+     29.99         10       3.99                                                
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+                                                                                
+I02 appa Scallop Sheath Dress                                                   
+As U Wish Juniors Scallop Sheath Dress                                          
+     29.99         10       3.99                                                
+                                                                                
+I03 appa Women Colro                                                            
+Calvin Klein Women Colro Block Scuba Sheath                                     
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+      30.5         10       3.99                                                
+                                                                                
+I04 appa Women Scuba Sheath Dress                                               
+Ivanka Trump Women Scuba Sheath Dress                                           
+      30.5         32       3.99                                                
+                                                                                
+I05 kitc Instant Pot                                                            
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+Instant pot 7in1                                                                
+    119.95         32       3.99                                                
+                                                                                
+I06 kitc CrockPot                                                               
+SCCPVL610S Programmable Cook and Carry Oval Slow Cooker                         
+    129.99         32       3.99                                                
+                                                                                
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+I07 kitc Travel Mug                                                             
+Contigo Autoseal West Loop Stainless Steel Travel Mug with EasyClean Lid        
+     15.09         32       3.99                                                
+                                                                                
+I08 kitc Camping Cookware                                                       
+Camping Cookware Mess Kit Backpacking Gear                                      
+     15.09         40       3.99                                                
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+                                                                                
+I09 kitc Color Knife Set                                                        
+Cuisinart 12 Piece Color Knife Set with Blade Guards (6 knives and 6 knife cover
+s)                                                                              
+     15.09         40       3.99                                                
+                                                                                
+I10 kitc Food Storage Container                                                 
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+Rubbermaid Easy Find Lid Food Storage Container 42Piece set                     
+     15.09         40       3.99                                                
+                                                                                
+I11 kitc Bamboo Cutting Board Set                                               
+Totally Bamboo 3 Piece Bamboo Cutting Board SetCrackers & Cheese                
+     14.99         40       3.99                                                
+                                                                                
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+I12 kitc Cutlery Tray                                                           
+Rubbermaid NoSlip Cutlery Tray                                                  
+     14.99         40       3.99                                                
+                                                                                
+I13 kitc Tool and Gadget Set                                                    
+Farberware Classic 17Piece Tool and Gadget Set                                  
+     14.99         40       3.99                                                
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+                                                                                
+I14 toys Rubik Cube Game                                                        
+brainteasing puzzler                                                            
+      9.99         40       3.99                                                
+                                                                                
+I15 toys Ravensburger Eiffel Tower                                              
+216 Piece 3D Building Set                                                       
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+     17.13         40       3.99                                                
+                                                                                
+I16 toys Perplexus                                                              
+Perplexus Original Maze Game by PlaSmart                                        
+     18.95         40       3.99                                                
+                                                                                
+I17 toys Pokemon                                                                
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+BW 3d Jigsaw                                                                    
+     18.93          5       1.99                                                
+                                                                                
+I18 toys Melissa & Doug                                                         
+Deluxe Fish Bowl Jumbo Knob Puzzle                                              
+      8.99          5       1.99                                                
+                                                                                
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+I19 toys Melissa & Doug                                                         
+Wooden Bear Family DressUp Puzzle                                               
+     12.42          5       1.99                                                
+                                                                                
+I20 toys Barbie                                                                 
+Barbie and Toddler Student Flippin Fun Gymnastics Dolls                         
+     29.97          5       1.99                                                
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+                                                                                
+I21 toys Manhattan Toy                                                          
+Baby Stella Peach Soft Nurturing First Doll (new for 2015!)                     
+     22.46          5       1.99                                                
+                                                                                
+I22 toys Pony Baby                                                              
+My Little Pony Baby Flurry Heart Pony Figure                                    
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+     39.99          5       1.99                                                
+                                                                                
+I23 toys Barbie Chef                                                            
+Barbie Spaghetti Chef Doll & Playset                                            
+     24.88         25       1.99                                                
+                                                                                
+I24 toys Family Pets                                                            
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+HapeFamily Pets Wooden Dollhouse Animals                                        
+        12         25       1.99                                                
+                                                                                
+I25 toys Disney Princess                                                        
+Disney Princess Little Kingdom Magiclip 7Doll Giftset                           
+     34.45         25       3.99                                                
+                                                                                
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+I26 bedr Shower Curtain                                                         
+Design PEVA 3G Shower Curtain Liner (PACK of 2)MILDEW Resistant                 
+      9.99         25       3.99                                                
+                                                                                
+I27 bedr Toothpaste                                                             
+Dustproof Hands Free Toothpaste Dispenser Automatic Toothpaste Squeezer and Toot
+hbrush Holder Set for 5 Brushes (pink)                                          
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+     10.99         30       3.99                                                
+                                                                                
+I28 bedr Bath Tub                                                               
+Boon DIVE Bath Tub Appliques                                                    
+     10.99         30       3.99                                                
+                                                                                
+I29 bedr Bed Sheet                                                              
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+HC Collection Bed Sheet & Pillowcase Set HOTEL LUXURY 1800 Series Egyptian Quali
+ty Bedding Collection!                                                          
+     10.99         30       3.99                                                
+                                                                                
+I30 bedr Filled Pillows                                                         
+Super Plush GelFiber Filled Pillows                                             
+     10.99          2       3.99                                                
+
+ITE DEPT INAME                                                                  
+--- ---- --------------------------------------------------                     
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+     PRICE   QUANTITY   SHIPCOST                                                
+---------- ---------- ----------                                                
+                                                                                
+
+31 rows selected.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SUPNO                                     NOT NULL CHAR(3)
+ SUPNAME                                            VARCHAR2(30)
+ LOCATION                                           VARCHAR2(30)
+
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310173                 P ENABLED  VALIDATED                             
+                                                                                
+SUPNO                                                                           
+         1                                                                      
+                                                                                
+
+
+SUP SUPNAME                        LOCATION                                     
+--- ------------------------------ ------------------------------               
+S00 Supplier00                     VA                                           
+S01 Supplier01                     MN                                           
+S02 Supplier02                     DC                                           
+S03 Supplier03                     LA                                           
+S04 Supplier04                     ML                                           
+S05 Supplier05                     WIS                                          
+S06 Supplier06                     FL                                           
+S07 Supplier07                     AZ                                           
+S08 Supplier08                     CO                                           
+S09 Supplier09                     NY                                           
+S10 Supplier10                     CT                                           
+
+11 rows selected.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SUPNO                                     NOT NULL CHAR(3)
+ ITEMNO                                    NOT NULL CHAR(3)
+ COST                                               NUMBER(6,2)
+
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310174                 C ENABLED  VALIDATED                             
+cost >= 0                                                                       
+COST                                                                            
+                                                                                
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310175                 P ENABLED  VALIDATED                             
+                                                                                
+SUPNO                                                                           
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310175                 P ENABLED  VALIDATED                             
+                                                                                
+ITEMNO                                                                          
+         2                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310176                 R ENABLED  VALIDATED                             
+                                                                                
+SUPNO                                                                           
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310177                 R ENABLED  VALIDATED                             
+                                                                                
+ITEMNO                                                                          
+         1                                                                      
+                                                                                
+
+
+SUP ITE       COST                                                              
+--- --- ----------                                                              
+S00 I00         60                                                              
+S01 I01         15                                                              
+S00 I01         15                                                              
+S06 I00         60                                                              
+S02 I00         60                                                              
+S03 I02         15                                                              
+S04 I03         20                                                              
+S05 I04         20                                                              
+S05 I05        100                                                              
+S06 I05        100                                                              
+S07 I06         30                                                              
+
+SUP ITE       COST                                                              
+--- --- ----------                                                              
+S08 I07         10                                                              
+S09 I08         10                                                              
+S10 I09         10                                                              
+S00 I10         10                                                              
+S01 I11         12                                                              
+S00 I12         13                                                              
+S02 I13         10                                                              
+S03 I14          8                                                              
+S04 I15         15                                                              
+S05 I16         14                                                              
+S05 I17         14                                                              
+
+SUP ITE       COST                                                              
+--- --- ----------                                                              
+S06 I18          5                                                              
+S07 I19         10                                                              
+S08 I20         20                                                              
+S09 I21         30                                                              
+S10 I22         35                                                              
+S10 I23         20                                                              
+S10 I24          7                                                              
+S09 I25         30                                                              
+S09 I26          5                                                              
+S08 I27          7                                                              
+S08 I28          7                                                              
+
+SUP ITE       COST                                                              
+--- --- ----------                                                              
+S07 I29          7                                                              
+S05 I30          7                                                              
+
+35 rows selected.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ TRANSNO                                   NOT NULL CHAR(3)
+ PDATE                                              DATE
+ QUANTITY                                           NUMBER(38)
+ SUPNO                                              CHAR(3)
+ ITEMNO                                             CHAR(3)
+
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310178                 C ENABLED  VALIDATED                             
+quantity >=0                                                                    
+QUANTITY                                                                        
+                                                                                
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310179                 P ENABLED  VALIDATED                             
+                                                                                
+TRANSNO                                                                         
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310180                 R ENABLED  VALIDATED                             
+                                                                                
+SUPNO                                                                           
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310181                 R ENABLED  VALIDATED                             
+                                                                                
+ITEMNO                                                                          
+         1                                                                      
+                                                                                
+
+
+TRA PDATE       QUANTITY SUP ITE                                                
+--- --------- ---------- --- ---                                                
+T00 31-MAY-16         30 S00 I00                                                
+T01 28-APR-16         30 S01 I01                                                
+T02 23-APR-16         30 S03 I02                                                
+T03 18-JUN-16         30 S04 I03                                                
+T04 09-APR-16         30 S05 I04                                                
+T05 04-AUG-14         50 S06 I05                                                
+T06 09-FEB-15         40 S07 I06                                                
+T07 12-APR-16         15 S08 I07                                                
+T08 23-FEB-15         15 S09 I08                                                
+T09 23-SEP-14         15 S10 I09                                                
+T10 23-MAY-16         15 S00 I10                                                
+
+TRA PDATE       QUANTITY SUP ITE                                                
+--- --------- ---------- --- ---                                                
+T11 15-JAN-15         15 S01 I11                                                
+T12 15-MAY-16         15 S00 I12                                                
+T13 15-JUN-16         15 S02 I13                                                
+T14 15-APR-16         15 S03 I14                                                
+T15 15-JAN-15         15 S04 I15                                                
+T16 15-JAN-15         15 S05 I16                                                
+T17 19-MAY-16         30 S05 I17                                                
+T18 19-DEC-14         30 S06 I18                                                
+T19 19-APR-15         30 S07 I19                                                
+T20 03-MAY-16         30 S08 I20                                                
+T21 30-DEC-13         50 S09 I21                                                
+
+TRA PDATE       QUANTITY SUP ITE                                                
+--- --------- ---------- --- ---                                                
+T22 12-MAR-15         34 S10 I22                                                
+T23 12-APR-16         20 S10 I23                                                
+T24 12-APR-16         20 S10 I24                                                
+T25 12-APR-16         20 S09 I25                                                
+T26 12-APR-16         20 S09 I26                                                
+T27 12-APR-16         20 S08 I27                                                
+T28 12-JAN-16         20 S08 I28                                                
+T29 12-JAN-16         20 S07 I29                                                
+T30 12-JAN-14         30 S05 I30                                                
+T31 09-JUL-15         30 S05 I04                                                
+T32 12-MAY-15         10 S10 I22                                                
+
+TRA PDATE       QUANTITY SUP ITE                                                
+--- --------- ---------- --- ---                                                
+T33 15-JUN-15         10 S03 I14                                                
+
+34 rows selected.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CUSNO                                     NOT NULL CHAR(3)
+ CNAME                                              VARCHAR2(30)
+ ADDRESS                                            VARCHAR2(100)
+
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310182                 P ENABLED  VALIDATED                             
+                                                                                
+CUSNO                                                                           
+         1                                                                      
+                                                                                
+
+
+CUS CNAME                                                                       
+--- ------------------------------                                              
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+C00 Leonardo DiCaprio                                                           
+Pocantico Hills                                                                 
+                                                                                
+C01 Tom Hanks                                                                   
+Seventh Ave                                                                     
+                                                                                
+C02 Brad Pitt                                                                   
+11 Madison Ave. at 24th St                                                      
+                                                                                
+
+CUS CNAME                                                                       
+--- ------------------------------                                              
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+C03 Tom Cruise                                                                  
+47 E. 12th St. nr. Broadway                                                     
+                                                                                
+C04 George Clooney                                                              
+261 Moore St                                                                    
+                                                                                
+C05 Russell Crowe                                                               
+1190 New Hampshire Ave NW                                                       
+                                                                                
+
+CUS CNAME                                                                       
+--- ------------------------------                                              
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+C06 Meryl Streep                                                                
+1201 24th St NW                                                                 
+                                                                                
+C07 Jennifer Lawrence                                                           
+1601 14th St NW                                                                 
+                                                                                
+C08 Kate Winslet                                                                
+633 D St NW                                                                     
+                                                                                
+
+CUS CNAME                                                                       
+--- ------------------------------                                              
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+C09 Julia Roberts                                                               
+601 Pennsylvania Ave NW                                                         
+                                                                                
+C10 Sandra Bullock                                                              
+1509 17th St NW                                                                 
+                                                                                
+C11 Nicole Kidman                                                               
+1924 Pennsylvania Ave NW                                                        
+                                                                                
+
+CUS CNAME                                                                       
+--- ------------------------------                                              
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+C12 Natalie Portman                                                             
+3100 K St NW                                                                    
+                                                                                
+C13 Angelina Jolie                                                              
+5 E St NW                                                                       
+                                                                                
+C14 Anne Hathaway                                                               
+1226 36th St NW                                                                 
+                                                                                
+
+15 rows selected.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CARDNO                                    NOT NULL CHAR(4)
+ TYPE                                               VARCHAR2(10)
+ EXPIRATION                                         DATE
+ CARDLIMIT                                          NUMBER(6,2)
+
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310183                 C ENABLED  VALIDATED                             
+cardlimit >= 0                                                                  
+CARDLIMIT                                                                       
+                                                                                
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310184                 P ENABLED  VALIDATED                             
+                                                                                
+CARDNO                                                                          
+         1                                                                      
+                                                                                
+
+
+CARD TYPE       EXPIRATIO  CARDLIMIT                                            
+---- ---------- --------- ----------                                            
+N001 visa       01-MAR-18        300                                            
+N002 visa       01-APR-18        300                                            
+N003 visa       01-APR-18        300                                            
+N004 visa       01-MAR-17        300                                            
+N005 visa       01-DEC-15        300                                            
+N006 visa       01-AUG-15        300                                            
+N007 visa       01-MAR-16        300                                            
+N008 visa       01-SEP-16        300                                            
+N009 visa       01-FEB-19        300                                            
+N010 express    01-FEB-20        300                                            
+N011 express    01-JAN-19        300                                            
+
+CARD TYPE       EXPIRATIO  CARDLIMIT                                            
+---- ---------- --------- ----------                                            
+N012 express    01-MAR-18        300                                            
+N013 express    01-APR-16        200                                            
+N014 mastercard 01-MAR-18        200                                            
+N015 mastercard 01-FEB-15        200                                            
+N016 mastercard 01-FEB-18        200                                            
+N017 mastercard 01-FEB-18        200                                            
+N018 discover   01-FEB-16        200                                            
+N019 discover   01-FEB-18        200                                            
+N020 discover   01-MAR-19        200                                            
+
+20 rows selected.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CUSNO                                     NOT NULL CHAR(3)
+ CARDNO                                    NOT NULL CHAR(4)
+
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310185                 P ENABLED  VALIDATED                             
+                                                                                
+CUSNO                                                                           
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310185                 P ENABLED  VALIDATED                             
+                                                                                
+CARDNO                                                                          
+         2                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310186                 R ENABLED  VALIDATED                             
+                                                                                
+CUSNO                                                                           
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310187                 R ENABLED  VALIDATED                             
+                                                                                
+CARDNO                                                                          
+         1                                                                      
+                                                                                
+
+
+CUS CARD                                                                        
+--- ----                                                                        
+C00 N001                                                                        
+C00 N019                                                                        
+C01 N002                                                                        
+C01 N020                                                                        
+C02 N003                                                                        
+C03 N004                                                                        
+C04 N005                                                                        
+C04 N018                                                                        
+C05 N006                                                                        
+C05 N007                                                                        
+C06 N016                                                                        
+
+CUS CARD                                                                        
+--- ----                                                                        
+C07 N008                                                                        
+C08 N009                                                                        
+C09 N010                                                                        
+C10 N011                                                                        
+C11 N012                                                                        
+C12 N013                                                                        
+C12 N017                                                                        
+C13 N014                                                                        
+C14 N015                                                                        
+
+20 rows selected.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CUSNO                                     NOT NULL CHAR(3)
+ CARDNO                                    NOT NULL CHAR(4)
+ ITEMNO                                    NOT NULL CHAR(3)
+ PURDATE                                   NOT NULL DATE
+ QUANTITY                                           NUMBER(38)
+
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310188                 C ENABLED  VALIDATED                             
+quantity >=0                                                                    
+QUANTITY                                                                        
+                                                                                
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310189                 P ENABLED  VALIDATED                             
+                                                                                
+CUSNO                                                                           
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310189                 P ENABLED  VALIDATED                             
+                                                                                
+CARDNO                                                                          
+         2                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310189                 P ENABLED  VALIDATED                             
+                                                                                
+ITEMNO                                                                          
+         3                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310189                 P ENABLED  VALIDATED                             
+                                                                                
+PURDATE                                                                         
+         4                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310190                 R ENABLED  VALIDATED                             
+                                                                                
+ITEMNO                                                                          
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310191                 R ENABLED  VALIDATED                             
+                                                                                
+CUSNO                                                                           
+         1                                                                      
+                                                                                
+
+CONSTRAINT_NAME                C STATUS   VALIDATED                             
+------------------------------ - -------- -------------                         
+SEARCH_CONDITION                                                                
+--------------------------------------------------------------------------------
+COLUMN_NAME                                                                     
+--------------------------------------------------------------------------------
+  POSITION                                                                      
+----------                                                                      
+SYS_C002310191                 R ENABLED  VALIDATED                             
+                                                                                
+CARDNO                                                                          
+         2                                                                      
+                                                                                
+
+8 rows selected.
+
+
+CUS CARD ITE PURDATE     QUANTITY                                               
+--- ---- --- --------- ----------                                               
+C00 N001 I07 02-JUL-16         16                                               
+C01 N002 I08 19-JAN-16         17                                               
+C02 N003 I09 19-JAN-16          1                                               
+C03 N004 I00 19-JAN-16          2                                               
+C04 N005 I01 12-DEC-15          2                                               
+C05 N006 I02 12-DEC-14          2                                               
+C07 N008 I03 12-FEB-15          1                                               
+C08 N009 I04 12-FEB-16          2                                               
+C10 N011 I05 21-JAN-15          1                                               
+C11 N012 I06 12-FEB-15          1                                               
+C04 N005 I11 12-JAN-16          1                                               
+
+CUS CARD ITE PURDATE     QUANTITY                                               
+--- ---- --- --------- ----------                                               
+C12 N013 I12 12-JAN-16          1                                               
+C13 N014 I13 12-JAN-16          1                                               
+C14 N015 I14 12-JAN-16          1                                               
+C03 N004 I01 24-FEB-16          1                                               
+C03 N004 I11 24-FEB-16          1                                               
+C06 N016 I19 24-FEB-16          1                                               
+C12 N017 I20 24-FEB-16          1                                               
+C04 N018 I21 24-FEB-16          1                                               
+C00 N019 I22 24-FEB-16          1                                               
+C01 N020 I23 23-JAN-14          1                                               
+C13 N014 I24 15-JAN-16          1                                               
+
+CUS CARD ITE PURDATE     QUANTITY                                               
+--- ---- --- --------- ----------                                               
+C14 N015 I25 15-JAN-16          1                                               
+C06 N016 I26 15-JAN-16          1                                               
+C12 N017 I27 15-JAN-16          1                                               
+C13 N014 I05 23-JAN-16          1                                               
+C14 N015 I06 10-FEB-15          1                                               
+C08 N009 I30 12-SEP-14          1                                               
+C12 N017 I21 12-MAR-16          1                                               
+C12 N017 I23 12-MAR-16          1                                               
+C14 N015 I20 12-MAR-16          1                                               
+C14 N015 I22 12-MAR-16          1                                               
+C06 N016 I25 12-MAR-16          1                                               
+
+CUS CARD ITE PURDATE     QUANTITY                                               
+--- ---- --- --------- ----------                                               
+C06 N016 I00 12-MAR-16          1                                               
+C00 N019 I22 29-MAY-16          1                                               
+C00 N019 I25 29-MAY-16          1                                               
+C12 N013 I02 29-MAY-16          1                                               
+C12 N013 I03 29-MAY-16          1                                               
+C03 N004 I20 29-MAY-16          1                                               
+C03 N004 I22 30-JUN-16          1                                               
+C00 N019 I20 30-JUN-16          1                                               
+C05 N007 I20 30-JUN-16          1                                               
+C05 N006 I22 30-JUN-16          1                                               
+C14 N015 I20 30-JUN-15          1                                               
+
+CUS CARD ITE PURDATE     QUANTITY                                               
+--- ---- --- --------- ----------                                               
+C11 N012 I20 30-JUN-16          1                                               
+C12 N013 I20 17-JUL-16          1                                               
+C10 N011 I20 17-JUL-16          1                                               
+C13 N014 I20 17-JUL-16          1                                               
+C14 N015 I20 17-JUL-16          1                                               
+C02 N003 I20 17-JUL-16          1                                               
+C09 N010 I21 17-JUL-16          1                                               
+C08 N009 I20 17-JUL-16          1                                               
+C07 N008 I20 17-JUL-16          1                                               
+C02 N003 I22 17-JUL-16          1                                               
+C14 N015 I20 18-JUL-16          1                                               
+
+CUS CARD ITE PURDATE     QUANTITY                                               
+--- ---- --- --------- ----------                                               
+C13 N014 I20 18-JUL-16          1                                               
+C10 N011 I20 18-JUL-16          1                                               
+C12 N013 I20 18-JUL-16          1                                               
+C11 N012 I20 18-JUL-15          1                                               
+
+59 rows selected.
+
+SQL> spool off

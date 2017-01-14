@@ -1,0 +1,20 @@
+Emp#,Ename,Eskill,WorkDept#
+Enn,alpha[50],alpha[20],alpha[4]
+E01,Mark Zuckerberg,programmer,pers
+E01,Mark Zuckerberg,communication,pers
+E02,Tim Cook,programmer,toys
+E02,Tim Cook,communication,toys
+E03,Scott Scherr,salesperson,appa
+E04,Jeff Weiner,salesperson,bedr
+E04,Jeff Weiner,programmer,bedr
+E05,Dominic Barton,math,acct
+E05,Dominic Barton,salesperson,acct
+E06,Alex Gorsky,planning,ship
+E07,John Legere,planning,kitc
+E07,John Legere,math,kitc
+E08,McDowell,programmer,toys
+E09,Kifer,math,acct
+E09,Kifer,writing,acct
+E10,Carol,salesperson,bedr
+E10,Carol,programmer,bedr
+E11,Lewis,salesperson,appa

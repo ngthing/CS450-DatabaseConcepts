@@ -1,0 +1,81 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red13\green13\blue13;\red250\green250\blue250;}
+\margl1440\margr1440\vieww10640\viewh8280\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 \
+Departments:	Dept#,Deptname\
+Admin: Dept#,Deptname,Manager#\
+Retail: Dept#,Deptname\
+Employees:	Emp#,Ename,Eskill,WorkDept#\
+Items:	Item#,Dept#,Iname,Desc,Price,Quantity,Shipcost\
+Suppliers:	Sup#,Sname,Location\
+canSupply:	Sup#,Item#,Cost\
+Procurement:	Trans#,Date,Quantity,Sup#,Item#\
+Customers:	Cus#,Cname,Address\
+CreditCards:	Card#,Type,Exp,Limit\
+CardOwner:	Cus#,Card#\
+Purchase:	Cus#,Card#,Item#,Date,Quantity\
+\
+My solution:\cb1 \
+1)\
+\
+project ((project items over Item#) intersection (project (select (cansupply rename (Sup# as Sup#1, Item# as Item#1, Cost as Cost1) times cansupply ) where (Item#1 = Item# and Sup#1 <> Sup# and Cost1 = Cost)) over Item# ) join items) over Item#, Desc\
+\
+\
+2)\
+\
+2a := (project purchase over Item#, Quantity) rename (Quantity as purchasedQ )\
+2b := 2a join ((project procurement over Item#, Quantity) rename (Quantity as procuredQ))\uc0\u8232 2c := project ( select 2b where purchasedQ > procuredQ) over Item#\
+\
+\
+\cb3 project ((\cb1 project ( select ((project purchase over Item#, Quantity) rename (Quantity as purchasedQ ) join ((project procurement over Item#, Quantity) rename (Quantity as procuredQ))) where purchasedQ > procuredQ) over Item#\cb3 ) join items) over Item#, Desc\
+\
+3) \
+\
+project ( ( (project ( select items where Quantity > 20) over Item#) difference (project(select purchase where Date > 160000) over Item#) ) join items ) over Item#, Desc\
+\
+4)\
+\
+project ( items join ((project (select items where Quantity < 20) over Item# ) difference (project (select procurement where Date > 150000) over Item# ))) over Item#, Desc\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \cb1 \
+5) \
+\
+goodcards := project ( select creditcards where Exp >= 1607) over Card#\
+expcards := project ( select creditcards where Exp < 1607) over Card#\
+\
+5a := project (goodcards join cardowners ) over Cus#\
+5b := project (expcards join cardowners ) over Cus#\
+5c := 5b difference 5a\
+\
+\
+project (((project ((project ( select creditcards where Exp < 1607) over Card#) join cardowners ) over Cus#) difference (project ((project ( select creditcards where Exp >= 1607) over Card#) join cardowners ) over Cus#)) join customers ) over Cus#, Cname\
+\
+6) Type in this: \
+\
+project (customers join (divide (project (purchase join ( project (select cansupply where Sup#= \'93S01\'94) over Item#)) over Cus#, Item#) by (project (select cansupply where Sup#= \'93S01\'94) over Item#) ) ) over Cus#, Cname\
+\
+7)\
+\
+project (customers join ((project (select items where Price > 100) over Item#) join (project (select purchase where Date >= 150000 and Date < 160000) over Cus#, Item#))) over Cus#, Cname\
+\
+8)\
+\
+select ( (project employees over Emp#, Ename, WorkDept#) join ((project admin over Dept#, Manager#) rename (Dept# as ManagedDept#, Manager# as Emp#))) where WorkDept# <> ManagedDept#\
+\
+\
+9)\
+\
+9a := (employees rename (Emp# as Emp#1, Ename as Ename1, Eskill as Eskill1, WorkDept# as WorkDept#1)) times employees \
+\
+9b := select 9a where (Emp#1 <> Emp# and WorkDept#1 = WorkDept# and Eskill1 = Eskill)\
+\
+\
+project (select ((employees rename (Emp# as Emp#1, Ename as Ename1, Eskill as Eskill1, WorkDept# as WorkDept#1)) times employees ) where (Emp#1 <> Emp# and WorkDept#1 = WorkDept# and Eskill1 = Eskill)) over Emp#1, Ename1, Emp#, Ename \
+\
+10)\
+\
+project (select ((employees rename (Emp# as Emp#1, Ename as Ename1, Eskill as Eskill1, WorkDept# as WorkDept#1)) times employees ) where (Emp#1 <> Emp# and WorkDept#1 = WorkDept# and Eskill1 = Eskill)) over Emp#1, Ename1, Emp#, Ename }

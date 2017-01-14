@@ -1,0 +1,33 @@
+Item#,Dept#,Iname,Desc,Price,Quantity,Shipcost
+Inn,alpha[4],alpha[20],alpha[200],x is R x >= 0,x is Z x>=0,x is R x >= 0
+I00,appa,Women Essie Dress,Lilly Pulitzer Women Essie Dress,98,10,3.99
+I01,appa,Maxi Dress,As U Wish Women Woeven Hi Lo Maxi Dress,29.99,10,3.99
+I02,appa,Scallop Sheath Dress,As U Wish Juniors Scallop Sheath Dress,29.99,10,3.99
+I03,appa,Women Colro,Calvin Klein Women Colro Block Scuba Sheath,30.5,10,3.99
+I04,appa,Women Scuba Sheath Dress,Ivanka Trump Women Scuba Sheath Dress,30.5,32,3.99
+I05,kitc,Instant Pot,Instant pot 7in1,119.95,32,3.99
+I06,kitc,CrockPot,SCCPVL610S Programmable Cook and Carry Oval Slow Cooker,129.99,32,3.99
+I07,kitc,Travel Mug,Contigo Autoseal West Loop Stainless Steel Travel Mug with EasyClean Lid,15.09,32,3.99
+I08,kitc,Camping Cookware ,Camping Cookware Mess Kit Backpacking Gear ,15.09,40,3.99
+I09,kitc,Color Knife Set ,Cuisinart 12 Piece Color Knife Set with Blade Guards (6 knives and 6 knife covers),15.09,40,3.99
+I10,kitc,Food Storage Container,Rubbermaid Easy Find Lid Food Storage Container 42Piece set,15.09,40,3.99
+I11,kitc,Bamboo Cutting Board Set,Totally Bamboo 3 Piece Bamboo Cutting Board SetCrackers & Cheese,14.99,40,3.99
+I12,kitc,Cutlery Tray,Rubbermaid NoSlip Cutlery Tray,14.99,40,3.99
+I13,kitc,Tool and Gadget Set,Farberware Classic 17Piece Tool and Gadget Set,14.99,40,3.99
+I14,toys,Rubik Cube Game,brainteasing puzzler,9.99,40,3.99
+I15,toys,Ravensburger Eiffel Tower,216 Piece 3D Building Set,17.13,40,3.99
+I16,toys,Perplexus,Perplexus Original Maze Game by PlaSmart,18.95,40,3.99
+I17,toys,Pokemon,BW 3d Jigsaw,18.93,5,1.99
+I18,toys,Melissa & Doug,Deluxe Fish Bowl Jumbo Knob Puzzle,8.99,5,1.99
+I19,toys,Melissa & Doug,Wooden Bear Family DressUp Puzzle,12.42,5,1.99
+I20,toys,Barbie,Barbie and Toddler Student Flippin Fun Gymnastics Dolls,29.97,5,1.99
+I21,toys,Manhattan Toy,Baby Stella Peach Soft Nurturing First Doll (new for 2015!),22.46,5,1.99
+I22,toys,Pony Baby,My Little Pony Baby Flurry Heart Pony Figure,39.99,5,1.99
+I23,toys,Barbie Chef,Barbie Spaghetti Chef Doll & Playset,24.88,25,1.99
+I24,toys,Family Pets,HapeFamily Pets Wooden Dollhouse Animals,12,25,1.99
+I25,toys,Disney Princess ,Disney Princess Little Kingdom Magiclip 7Doll Giftset,34.45,25,3.99
+I26,bedr,Shower Curtain ,mDesign PEVA 3G Shower Curtain Liner (PACK of 2)MILDEW Resistant,9.99,25,3.99
+I27,bedr,Toothpaste ,Dustproof Hands Free Toothpaste Dispenser Automatic Toothpaste Squeezer and Toothbrush Holder Set for 5 Brushes (pink),10.99,30,3.99
+I28,bedr,Bath Tub,Boon DIVE Bath Tub Appliques,10.99,30,3.99
+I29,bedr,Bed Sheet ,HC Collection Bed Sheet & Pillowcase Set HOTEL LUXURY 1800 Series Egyptian Quality Bedding Collection!,10.99,30,3.99
+I30,bedr,Filled Pillows ,Super Plush GelFiber Filled Pillows ,10.99,2,3.99

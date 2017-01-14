@@ -1,0 +1,22 @@
+Card#,Type,Exp,Limit
+Nnnn,alpha[10],digit[4],x is Z x>=0
+N001,visa,1803,300
+N002,visa,1804,300
+N003,visa,1804,300
+N004,visa,1703,300
+N005,visa,1512,300
+N006,visa,1508,300
+N007,visa,1603,300
+N008,visa,1609,300
+N009,visa,1902,300
+N010,express,2002,300
+N011,express,1901,300
+N012,express,1803,300
+N013,express,1604,200
+N014,mastercard,1803,200
+N015,mastercard,1502,200
+N016,mastercard,1802,200
+N017,mastercard,1802,200
+N018,discover,1602,200
+N019,discover,1802,200
+N020,discover,1903,200

@@ -1,0 +1,195 @@
+SQL> @queries.sql
+
+ITE                                                                             
+---                                                                             
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+I05                                                                             
+Instant pot 7in1                                                                
+                                                                                
+I01                                                                             
+As U Wish Women Woeven Hi Lo Maxi Dress                                         
+                                                                                
+I00                                                                             
+Lilly Pulitzer Women Essie Dress                                                
+                                                                                
+
+
+CUS CNAME                                                                       
+--- ------------------------------                                              
+C10 Sandra Bullock                                                              
+C11 Nicole Kidman                                                               
+C14 Anne Hathaway                                                               
+
+
+ITE                                                                             
+---                                                                             
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+I15                                                                             
+216 Piece 3D Building Set                                                       
+                                                                                
+I28                                                                             
+Boon DIVE Bath Tub Appliques                                                    
+                                                                                
+I06                                                                             
+SCCPVL610S Programmable Cook and Carry Oval Slow Cooker                         
+                                                                                
+
+ITE                                                                             
+---                                                                             
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+I16                                                                             
+Perplexus Original Maze Game by PlaSmart                                        
+                                                                                
+I10                                                                             
+Rubbermaid Easy Find Lid Food Storage Container 42Piece set                     
+                                                                                
+I29                                                                             
+HC Collection Bed Sheet & Pillowcase Set HOTEL LUXURY 1800 Series Egyptian Quali
+ty Bedding Collection!                                                          
+
+ITE                                                                             
+---                                                                             
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+                                                                                
+
+6 rows selected.
+
+
+CUS CNAME                                                                       
+--- ------------------------------                                              
+C04 George Clooney                                                              
+C05 Russell Crowe                                                               
+C14 Anne Hathaway                                                               
+
+
+CUS CNAME                                                                       
+--- ------------------------------                                              
+C03 Tom Cruise                                                                  
+C04 George Clooney                                                              
+
+
+EMP EMPNAME1                       EMP EMPNAME2                                 
+--- ------------------------------ --- ------------------------------           
+E03 Scott Scherr                   E11 Lewis                                    
+E04 Jeff Weiner                    E10 Carol                                    
+
+
+CUS CNAME                          NUMBER_OF_PURCHASES TOTAL_PAYED              
+--- ------------------------------ ------------------- -----------              
+C11 Nicole Kidman                                    2      165.94              
+C14 Anne Hathaway                                    2      165.94              
+C10 Sandra Bullock                                   1      123.94              
+C04 George Clooney                                   1       67.96              
+C07 Jennifer Lawrence                                1       34.49              
+
+
+ITE                                                                             
+---                                                                             
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+TOTAL_PROCURED TOTAL_COST AVERAGE_COST                                          
+-------------- ---------- ------------                                          
+I11                                                                             
+Totally Bamboo 3 Piece Bamboo Cutting Board SetCrackers & Cheese                
+            15        180           12                                          
+                                                                                
+I15                                                                             
+216 Piece 3D Building Set                                                       
+            15        225           15                                          
+
+ITE                                                                             
+---                                                                             
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+TOTAL_PROCURED TOTAL_COST AVERAGE_COST                                          
+-------------- ---------- ------------                                          
+                                                                                
+I04                                                                             
+Ivanka Trump Women Scuba Sheath Dress                                           
+            60       1200           20                                          
+                                                                                
+I08                                                                             
+Camping Cookware Mess Kit Backpacking Gear                                      
+
+ITE                                                                             
+---                                                                             
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+TOTAL_PROCURED TOTAL_COST AVERAGE_COST                                          
+-------------- ---------- ------------                                          
+            15        150           10                                          
+                                                                                
+I13                                                                             
+Farberware Classic 17Piece Tool and Gadget Set                                  
+            15        150           10                                          
+                                                                                
+I06                                                                             
+
+ITE                                                                             
+---                                                                             
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+TOTAL_PROCURED TOTAL_COST AVERAGE_COST                                          
+-------------- ---------- ------------                                          
+SCCPVL610S Programmable Cook and Carry Oval Slow Cooker                         
+            40       1200           30                                          
+                                                                                
+I12                                                                             
+Rubbermaid NoSlip Cutlery Tray                                                  
+            15        195           13                                          
+                                                                                
+
+ITE                                                                             
+---                                                                             
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+TOTAL_PROCURED TOTAL_COST AVERAGE_COST                                          
+-------------- ---------- ------------                                          
+I16                                                                             
+Perplexus Original Maze Game by PlaSmart                                        
+            15        210           14                                          
+                                                                                
+I19                                                                             
+Wooden Bear Family DressUp Puzzle                                               
+            30        300           10                                          
+
+ITE                                                                             
+---                                                                             
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+TOTAL_PROCURED TOTAL_COST AVERAGE_COST                                          
+-------------- ---------- ------------                                          
+                                                                                
+I22                                                                             
+My Little Pony Baby Flurry Heart Pony Figure                                    
+            44       1540           35                                          
+                                                                                
+I14                                                                             
+brainteasing puzzler                                                            
+
+ITE                                                                             
+---                                                                             
+DESCRIPTION                                                                     
+--------------------------------------------------------------------------------
+TOTAL_PROCURED TOTAL_COST AVERAGE_COST                                          
+-------------- ---------- ------------                                          
+            25        200            8                                          
+                                                                                
+
+11 rows selected.
+
+
+CREDIT_CAR                                                                      
+----------                                                                      
+visa                                                                            
+
+
+TOTAL_VIOLATORS                                                                 
+---------------                                                                 
+              1                                                                 
+
+SQL> spool off
